@@ -1,0 +1,217 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.movie-info {
+  height: 90vh;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-link {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.search-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+  transition: 0.2s;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* Navbar Container */
+.navbar-container {
+  background-color: #3b3b3b;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar Greeting */
+.navbar-greeting {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+/* Navbar Item */
+.navbar-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar Link */
+.navbar-link {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Navbar Button */
+.navbar-button {
+  width: 100px;
+  margin-right: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #45a049;
+}
+
+/* Align buttons to the right */
+.navbar-item {
+  margin-left: auto;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+.form-container {
+  padding: 150px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100v; */
+}
+
+.form-input {
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.submit-button {
+  background-color: #ff3366;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #ff0033;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align labels to the left */
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #fff;
+}
